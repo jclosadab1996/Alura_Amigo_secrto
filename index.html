@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Amigo Secreto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./script.js"></script>
+    <!-- Fuente de Google Fonts para un diseño más profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Contenedor principal del juego -->
+    <div class="container">
+      <h1>🎁 Amigo Secreto 🎁</h1>
+      
+      <!-- Sección para agregar participantes -->
+      <div class="input-section">
+        <input type="text" id="participantInput" placeholder="Nombre del participante" />
+        <button id="addButton">Agregar</button>
+      </div>
+
+      <!-- Lista de participantes -->
+      <div class="participants-container">
+        <h2>Participantes</h2>
+        <ul id="participantsList"></ul>
+      </div>
+
+      <!-- Botón para seleccionar ganador -->
+      <button id="selectWinner" class="winner-button">¡Seleccionar Ganador!</button>
+
+      <!-- Sección donde se mostrará el ganador -->
+      <div id="winnerSection" class="winner-section hidden">
+        <h2>¡El ganador es!</h2>
+        <p id="winnerName"></p>
+      </div>
+    </div>
+  </body>
+</html>
